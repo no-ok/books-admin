@@ -1,0 +1,58 @@
+.main-header {
+	background-color: #fff;
+    border-bottom: 1px solid #AED3F4;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+
+    .container {
+    	display: flex;
+    	justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.main-logo {
+	display: flex;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: 500;
+    color: #5a8ebd;
+}
+
+.index-page,
+.login-page {
+	.main-header {
+		margin-bottom: 0;
+	}
+}
+
+@media(max-width: 991px) {
+    .main-logo {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-header {
+        padding: 5px 0 10px;
+
+        .container {
+            flex-wrap: wrap;
+        }
+    }
+
+    .main-logo {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 575px) {
+    .main-header {
+        .logout-link {
+            margin-right: 10px;
+        }
+    }
+}

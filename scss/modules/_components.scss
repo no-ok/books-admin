@@ -1,0 +1,129 @@
+.form-control {
+	height: 42px;
+	border: 1px solid #bfc3c7;
+
+	&:focus {
+	    box-shadow: 0 0 0 3px rgba(13,110,253, 0.25);
+	}
+}
+
+.form-select {
+	height: 42px;
+	border: 1px solid #bfc3c7;
+}
+
+.mb-3 {
+	margin-bottom: 20px!important;
+}
+
+.cabinet-head {
+  .btn-success {
+
+    .plus-icon {
+      font-size: 22px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-success {
+	background-color: #279d27;
+	border-color: #279d27;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-remove {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/icons/trash-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.btn-edit {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/icons/pencil-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.form-group {
+	label {
+		font-size: 14px;
+		color: #606469;
+	}
+}
+
+textarea {
+	&.form-control {
+		min-height: 120px;
+	}
+}
+
+.file-form-group {
+  position: relative;
+  height: 42px;
+  border: 1px dashed #4982b5;
+  border-radius: 0.25rem;
+  margin-top: 20px;
+
+  .span-label {
+    font-size: 14px;
+    color: #606469;
+    position: absolute;
+    left: 0;
+    top: -23px;
+  }
+
+  .inputfile {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  label {
+    width: 100%;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    height: 100%;
+    color: #4982b5;
+    cursor: pointer;
+  }
+
+  .tooltip-box {
+    top: 12px;
+  }
+}
+
+.btn-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .btn {
+    height: 42px;
+    width: calc(50% - 10px);
+  }
+}

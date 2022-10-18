@@ -32,30 +32,23 @@
         <div class="container">
           <a href="#" class="main-logo">Книжковий адмін</a>
 
-            <div class="admin-nav">
-              <a href="all-books.html">Книжки</a>
-
-              <a href="all-users.html">Користувачі</a>
-            </div>
-
-            <a href="index.html" class="logout-link">Вихід</a>
+          <a href="index.html" class="logout-link btn btn-outline-dark">Вихід</a>
         </div>
       </header>
-
 
       <main class="page-content">
         <div class="flex-container">
           <div class="container">
             <h1 class="text-center">Додати книжку</h1>
 
-            <div class="card create-task">
+            <div class="card create-book">
               <form action="">
                 <div class="row">
                   <div class="col-12 mb-3">
                     <div class="form-group">
                       <label for="input-01">Назва книжки</label>
 
-                      <input type="text" id="input-01" class="form-control">
+                      <input type="text" id="input-01" class="form-control" value="Соляріс">
                     </div>
                   </div>
 
@@ -63,69 +56,131 @@
                     <div class="form-group">
                       <label for="input-02">Автора</label>
 
-                      <input type="text" id="input-02" class="form-control">
+                      <input type="text" id="input-02" class="form-control" value="Станіслав Лем">
                     </div>
                   </div>
 
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <label for="input-03">Переклад</label>
+                  <div class="col-12 mb-5">
+                    <div class="file-form-group mb-3">
+                      <span class="span-label">Тектовий файл</span>
 
-                      <input type="text" id="input-03" class="form-control">
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <label for="input-04">Озвучка</label>
-
-                      <input type="text" id="input-04" class="form-control">
-                    </div>
-                  </div>
-
-
-                  <div class="col-12 mb-3">
-                    <div class="image-form-group">
-                      <span class="span-label">Обкладинка</span>
-
-                      <input type="file" name="file-1[]" id="file-1" class="inputfile form-control" data-multiple-caption="{count} - фото обрано" multiple />
+                      <input type="file" id="file-1" class="inputfile" multiple />
                       
-                      <label for="file-1"><span>Обрати фото...</span></label>
+                      <label for="file-1">Обрати файл (.epub)</label>
                     </div>
+
+                    <table class="table table-striped table-bordered" >
+                      <tr>
+                        <th>Назва файлу</th>
+                        <th>Дії</th>
+                      </tr>
+
+                      <tr>
+                        <td>С.Лем - Соляріс</td>
+
+                        <td><button type="button" class="btn btn-danger btn-remove"></button></td>
+                      </tr>
+                    </table>
                   </div>
 
-                  <div class="col-12 mb-3">
-                    <div class="image-form-group">
-                      <span class="span-label">Аудіо файли (mp3)</span>
+                  <div class="col-12 mb-5">
+                    <div class="file-form-group mb-3">
+                      <span class="span-label">Аудіо файли</span>
 
-                      <input type="file" name="file-2[]" id="file-2" class="inputfile form-control" data-multiple-caption="{count} - обрано" multiple />
+                      <input type="file" id="file-2" class="inputfile" multiple />
                       
-                      <label for="file-2"><span>Обрати mp3 файли...</span></label>
+                      <label for="file-2">Обрати файли (.mp3)</label>
+                    </div>
+
+                    <div class="table-container">
+                      <table class="table table-striped table-bordered" >
+                        <tr>
+                          <th>Назва файлу</th>
+                          <th>SHA256</th>
+                          <th>Дії</th>
+                        </tr>
+
+                        <tr>
+                          <td>001.mp3</td>
+                          <td>ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad</td>
+                          <td><button type="button" class="btn btn-danger btn-remove"></button></td>
+                        </tr>
+
+                        <tr>
+                          <td>002.mp3</td>
+                          <td>ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad</td>
+                          <td><button type="button" class="btn btn-danger btn-remove"></button></td>
+                        </tr>
+
+                        <tr>
+                          <td>003.mp3</td>
+                          <td>ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad</td>
+                          <td><button type="button" class="btn btn-danger btn-remove"></button></td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
 
-                  <div class="col-12 mb-3">
-                    <div class="image-form-group">
+                  <div class="col-12 mb-5">
+                    <div class="file-form-group mb-3">
                       <span class="span-label">Субтитри</span>
 
-                      <input type="file" name="file-3[]" id="file-3" class="inputfile form-control" data-multiple-caption="{count} - обрано" multiple />
+                      <input type="file" id="file-3" class="inputfile" multiple />
                       
-                      <label for="file-3"><span>Обрати файли...</span></label>
+                      <label for="file-3">Обрати файли (.srt)</label>
+                    </div>
+
+                    <div class="table-container">
+                      <table class="table table-striped table-bordered" >
+                        <tr>
+                          <th>Назва файлу</th>
+                          <th>Дії</th>
+                        </tr>
+
+                        <tr>
+                          <td>001.srt</td>
+                          <td><button type="button" class="btn btn-danger btn-remove"></button></td>
+                        </tr>
+
+                        <tr>
+                          <td>002.srt</td>
+                          <td><button type="button" class="btn btn-danger btn-remove"></button></td>
+                        </tr>
+
+                        <tr>
+                          <td>003.srt</td>
+                          <td><button type="button" class="btn btn-danger btn-remove"></button></td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
 
-                  <div class="col-12 mb-3">
-                    <div class="form-group">
-                      <label for="textarea-field">Короткий опис</label>
+                  <div class="col-12 mb-5">
+                    <div class="file-form-group mb-3">
+                      <span class="span-label">Плейлист</span>
 
-                      <textarea class="form-control" id="textarea-field"></textarea>
+                      <input type="file" id="file-4" class="inputfile" multiple />
+                      
+                      <label for="file-4">Обрати файли (.pls)</label>
                     </div>
+
+                    <table class="table table-striped table-bordered" style="display: none;">
+                      <tr>
+                        <th>Назва файлу</th>
+
+                        <th>Дії</th>
+                      </tr>
+
+                      <tr>
+                        <td>solaris.pls</td>
+
+                        <td><button type="button" class="btn btn-danger"></button></td>
+                      </tr>
+                    </table>
                   </div>
 
                   <div class="btn-holder">
-                    <button type="button" class="btn btn-secondary">Зберегти в чернетки</button>
-
-                    <button type="button" class="btn btn-success">Додати книжку</button>
+                    <button type="button" class="btn btn-success">Зберегти книжку</button>
                   </div>
                 </div>
               </form>
@@ -139,6 +194,182 @@
           <p class="text-center">&copy; Книжковий адмін 2022</p>
         </div>
       </footer>
+
+      <div class="upload-toast" style="transform: translateY(0); opacity: 1;">
+        <div class="toast-header">
+          <div class="toast-title">Завантаження</div>
+
+          <div class="toast-close"></div>
+        </div>
+
+        <!-- <div class="cancel-upload">
+          Завантаження файлів - 11
+
+          <div class="btn-cancel">Скасувати</div>
+        </div> -->
+
+        <div class="toast-body">
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_001.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_002.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status" style="display: none;"></div>
+
+              <div class="warning-status"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_004.mp3</div>
+
+              <small>Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_005.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_006.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status" style="display: none;"></div>
+
+              <div class="warning-status"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_007.mp3</div>
+
+              <small>Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_008 asdasd asdasd asdwd asdasd asdwdsadsad.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_009.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_010.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+
+          <div class="upload-item">
+            <div class="item-status">
+              <div class="success-status"></div>
+
+              <div class="warning-status" style="display: none;"></div>
+            </div>
+
+            <div class="item-name">
+              <div>Соляріс_011.mp3</div>
+
+              <small style="display: none;">Не вдалось завантажити</small>
+            </div>
+
+            <div class="item-reload" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
 
       <script src="js/libs.min.js"></script>
       <script src="js/main.js"></script>

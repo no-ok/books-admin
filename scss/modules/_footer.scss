@@ -1,0 +1,38 @@
+.main-footer {
+	border-top: 1px solid #AED3F4;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	background-color: #fff;
+
+	.container {
+		// display: flex;
+		// justify-content: space-between;
+	}
+
+	hr {
+		display: block;
+		width: 100%;
+	}
+
+
+	p {
+		color: #555;
+		margin: 0;
+	}
+
+	a {
+		color: #555;
+		text-decoration: none;
+
+		span {
+			color: #5a8ebd;
+		}
+
+		&:hover {
+			span {
+				text-decoration: underline;
+			}
+		}
+	}
+}

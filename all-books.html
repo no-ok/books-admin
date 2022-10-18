@@ -30,13 +30,7 @@
         <div class="container">
           <a href="#" class="main-logo">Книжковий адмін</a>
 
-            <div class="admin-nav">
-              <a href="all-books.html">Книжки</a>
-
-              <a href="all-users.html">Користувачі</a>
-            </div>
-
-            <a href="index.html" class="logout-link">Вихід</a>
+          <a href="index.html" class="logout-link btn btn-outline-dark">Вихід</a>
         </div>
       </header>
 
@@ -45,7 +39,7 @@
           <div class="cabinet-head">
             <h1>Усі книжки</h1>
 
-            <a href="add-book.html" class="btn btn-success"><span class="plus-icon">+</span> Додати книжку</a>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#create-modal"><span class="plus-icon">+</span> Додати книжку</button>
           </div>
 
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -114,9 +108,9 @@
                     </td>
 
                     <td>
-                      <a href="edit-book.html" class="btn btn-primary"></a>
+                      <a href="edit-book.html" class="btn btn-primary btn-edit"></a>
 
-                      <button type="button" class="btn btn-danger"></button>
+                      <button type="button" class="btn btn-danger btn-remove"></button>
                     </td>
                   </tr>
 
@@ -144,9 +138,9 @@
                     </td>
 
                     <td>
-                      <a href="edit-book.html" class="btn btn-primary"></a>
+                      <a href="edit-book.html" class="btn btn-primary btn-edit"></a>
 
-                      <button type="button" class="btn btn-danger"></button>
+                      <button type="button" class="btn btn-danger btn-remove"></button>
                     </td>
                   </tr>
 
@@ -174,9 +168,9 @@
                     </td>
 
                     <td>
-                      <a href="edit-book.html" class="btn btn-primary"></a>
+                      <a href="edit-book.html" class="btn btn-primary btn-edit"></a>
 
-                      <button type="button" class="btn btn-danger"></button>
+                      <button type="button" class="btn btn-danger btn-remove"></button>
                     </td>
                   </tr>
                 </table>
@@ -244,9 +238,9 @@
                     </td>
 
                     <td>
-                      <a href="edit-book.html" class="btn btn-primary"></a>
+                      <a href="edit-book.html" class="btn btn-primary btn-edit"></a>
 
-                      <button type="button" class="btn btn-danger"></button>
+                      <button type="button" class="btn btn-danger btn-remove"></button>
                     </td>
                   </tr>
                 </table>
@@ -314,9 +308,9 @@
                     </td>
 
                     <td>
-                      <a href="edit-book.html" class="btn btn-primary"></a>
+                      <a href="edit-book.html" class="btn btn-primary btn-edit"></a>
 
-                      <button type="button" class="btn btn-danger"></button>
+                      <button type="button" class="btn btn-danger btn-remove"></button>
                     </td>
                   </tr>
                 </table>
@@ -335,6 +329,47 @@
           <p class="text-center">&copy; Книжковий адмін 2022</p>
         </div>
       </footer>
+
+      <div class="modal fade" id="create-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <h5 class="modal-title">Додати книжку</h5>
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <form action="">
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <div class="form-group">
+                      <label for="input-01">Назва книжки</label>
+
+                      <input type="text" id="input-01" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-12 mb-3">
+                    <div class="form-group">
+                      <label for="input-02">Автор</label>
+
+                      <input type="text" id="input-02" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-holder">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+
+                  <a href="add-book.html" class="btn btn-success">Додати файли</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <script src="js/libs.min.js"></script>
       <script src="js/main.js"></script>
