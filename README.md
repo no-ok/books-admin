@@ -1,2 +1,2 @@
 # books-admin
-Admin panel fot book reader
+Admin panel for book reader
