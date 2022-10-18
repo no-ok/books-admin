@@ -127,3 +127,17 @@ textarea {
     width: calc(50% - 10px);
   }
 }
+
+.breadcrumb-item {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page-item.active {
+  pointer-events: none;
+}
